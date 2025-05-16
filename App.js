@@ -1,11 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
+import { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Driver from './components/Driver';
 
 export default function App() {
+
+  const [contador, setContador] = useState(0);
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      
+      <Driver/>
     </View>
   );
 }
